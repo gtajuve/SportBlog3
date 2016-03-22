@@ -194,6 +194,25 @@ class GameController extends Controller
 
         $this->loadView('game/update',$data);
     }
+    public function delete()
+    {
+        if(!$this->isLogAdmin()){
+            header('Location:index.php?c=login&m=login');
+            exit;
+        }
+        $id=isset($_GET['id'])?$_GET['id']:0;
+        $gamesCollection=new GamesCollection();
+        $gamesCollection->delete($id);
+        if(isset($_GET['id'])&&$_GET['id']>0){
+            $game_id=(int)$_GET['id'];
+            $gamesPlayersCollection=new GamesPlayersCollection();
+            $gamesPlayersCollection->delete($game_id);
+
+        }
+        header('Location:index.php?c=game');
+        exit;
+    }
+
     private function validationGameInfo($inputData){
         $errors=array();
         if (!isset($inputData['home_team_id'])||!isset($inputData['away_team_id'])||$inputData['away_team_id']==$inputData['home_team_id']) {

@@ -27,7 +27,7 @@ class PlayersCollection extends Collection
         }
     }
     public function getOne($where = null) {
-        $sql = " SELECT p.id,p.first_name,p.last_name,p.position_player,p.country,p.games,p.goals,p.image,t.team_name FROM {$this->table} as p ";
+        $sql = " SELECT p.id,p.first_name,p.last_name,p.position_player,p.country,p.games,p.goals,p.image,t.team_name,p.team_id FROM {$this->table} as p ";
         $sql.=" LEFT JOIN teams as t ON t.id=p.team_id ";
         $sql.= "WHERE p.id = '{$where}'";
 

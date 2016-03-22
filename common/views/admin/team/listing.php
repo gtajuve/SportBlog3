@@ -49,14 +49,7 @@ require_once __DIR__.'/../include/sidebar.php';
                                 </label>
                             </div>
                         </div>
-                        <div class="span3">
-                            <label>Подредо по <select size="1" name="filter" aria-controls="DataTables_Table_0" >
-                                    <option value="team_name ASC" <?php echo (isset($_GET['filter'])&&$_GET['filter']=='team_name ASC')?'selected': ''?> >Име възходящо</option>
-                                    <option value="team_name DESC" <?php echo (isset($_GET['filter'])&&$_GET['filter']=='team_name DESC')?'selected': ''?>>Име низходяшо</option>
 
-                                </select>
-                            </label>
-                        </div>
                         <div class="row-fluid">
                             <div class="control-group">
 

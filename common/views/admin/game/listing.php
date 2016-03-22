@@ -136,7 +136,7 @@ require_once __DIR__.'/../include/sidebar.php';
                                 <a class="btn btn-info" href="index.php?c=roster&m=create&id=<?php echo $game->getId(); ?>">
                                     <i class="halflings-icon file"></i>
                                 </a>
-                                <a class="btn btn-danger" href=index.php?c=game&m=delete&id=<?php echo $game->getId(); ?>">
+                                <a class="btn btn-danger" href="index.php?c=game&m=delete&id=<?php echo $game->getId(); ?>">
                                     <i class="halflings-icon white trash"></i>
                                 </a>
                                 <a class="btn btn-danger" href="index.php?c=roster&m=update&id=<?php echo $game->getId(); ?>">

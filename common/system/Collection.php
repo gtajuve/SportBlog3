@@ -112,8 +112,7 @@ abstract class Collection {
     {
         $sql = "DELETE FROM {$this->table} WHERE id = {$id}";
 
-        $result = $this->db->query($sql);
-
+        var_dump($sql);die;
         if($result === null) {
             $this->db->error();
         }

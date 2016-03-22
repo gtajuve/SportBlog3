@@ -145,31 +145,30 @@ class TeamController extends Controller
         }
 
         $inputData=array(
+            'id'=>$id,
             "team_name"=>$team->getTeamName(),
             "image"=>$team->getImage(),
             "address"=>$team->getAddress(),
             "country_id"=>$team->getCountryId()
         );
+        echo '<pre>'.print_r($inputData,true).'</pre>';
         $data['inputData']=$inputData;
         $data['id']=$id;
 
         if(isset($_POST['change'])){
             $inputData=array(
+                'id'=>$id,
                 "team_name"=>addslashes(trim($_POST['name'])),
                 "image"=>addslashes(trim($_POST['image'])),
                 "address"=>addslashes(trim($_POST['address'])),
                 "country_id"=>$_POST['country_id']
             );
+            echo '<pre>'.print_r($inputData,true).'</pre>';
             $errors=$this->validationTeamInfo($inputData);
             $data['errors']=$errors;
             $data['inputData']=$inputData;
             if(empty($errors)){
-
-
-                $team->setTeamName($inputData['team_name']);
-                $team->setImage($inputData['image']);
-                $team->setAddress($inputData['address']);
-                $team->setCountryId($inputData['country_id']);
+                $team->init($inputData);
 
                 $teamsCollection->save($team);
                 $_SESSION['flashMessage']="успешна промяна";

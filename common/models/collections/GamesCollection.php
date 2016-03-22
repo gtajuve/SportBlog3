@@ -51,6 +51,7 @@ class GamesCollection extends Collection {
 
         $result = $this->db->query($sql);
 
+
         if ($result  === false) {
             $this->db->error();
         }
