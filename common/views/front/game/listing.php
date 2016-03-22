@@ -76,7 +76,7 @@
 <hr>
 <div class="row">
     <?php foreach ($games as $game) : ?>
-        <div class="col-md-3"></div>
+        <div class="col-md-3"><?php echo date('Y-F-d h:i',(int)$game->getDatePlay())?></div>
         <div class="col-md-2"><img src="<?php echo $game->getHomeImage()?>" alt="" height="75px"></div>
         <div class="col-md-3"><h5><a href="index.php?c=roster&id=<?php echo $game->getId()?>"><?php echo $game->getHomeTeam().'   '.$game->getScore().'   '.$game->getAwayTeam()?></a></h5></div>
         <div class="col-md-2"><img src="<?php echo $game->getAwayImage()?>" alt="" height="75px"></div>
