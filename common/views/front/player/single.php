@@ -20,8 +20,8 @@
                 <thead>
                 <tr>
                     <th>Отбор</th>
-                    <th><a href="index.php?c=teams&m=single&f=1&id=<?php echo $teamId?>">Мачове</a> </th>
-                    <th><a href="index.php?c=teams&m=single&f=2&id=<?php echo $teamId?>">Голове</a></th>
+                    <th>Мачове</a> </th>
+                    <th>Голове</a></th>
                 </tr>
                 </thead>
                 <tbody>

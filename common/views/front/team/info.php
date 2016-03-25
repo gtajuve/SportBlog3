@@ -14,11 +14,11 @@
                 <h4>Държава:<?php echo $teamInfo->getCountryName()?></h4>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row" >
+            <div class="col-md-12"  >
                 <p class="bg-primary text-center">Последни пет мача</p>
             </div>
-            <table class="table table-striped">
+            <table class="table table-striped" id="five">
                 <thead>
                 <tr>
                     <th>Дата</th>
@@ -42,8 +42,11 @@
 
             </table>
             <div class="col-md-12 left">
-                <a href="index.php?c=games&m=index&team_id1=<?php echo $_GET['id'] ?>">Покажи всички мачове</a>
+                <a data-id="<?php echo $_GET['id'] ?>" id="show">Покажи всички мачове</a>
             </div>
+        </div>
+        <div class="row" id="full" style="display: none">
+
         </div>
         <div class="row">
             <div class="col-md-12">
@@ -87,3 +90,24 @@
     <div class="col-md-2"></div>
 </div>
 <?php require_once __DIR__.'/../include/footer.php'; ?>
+<script>
+    $( document).ready(function(){
+        $('#show').on('click',function(){
+//
+            var id =$(this).data('id');
+
+            $.ajax({
+                    method: "POST",
+                    url: "index.php?c=games&m=show",
+                    data: { id: id }
+                })
+                .done(function( msg ) {
+
+                    $('#full').html(msg);
+                    $('#full').toggle();
+                    $('#five').toggle();
+                });
+        })
+    })
+</script>
+

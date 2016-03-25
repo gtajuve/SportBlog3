@@ -82,4 +82,35 @@ class GamesController extends Controller
 
         $this->loadFrontView('game/listing',$data);
     }
+    public function show()
+    {
+        $gamesCollection=new GamesCollection();
+        if(isset($_POST['id'])){
+            $where=array(
+                'home_team_id'=>$_POST['id'],
+                'away_team_id'=>$_POST['id'],
+            );
+            $games=$gamesCollection->getAllByTeam($where,array(),-1,4,'date_play DESC');
+            $html='<table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Дата</th>
+                    <th>Домакин</th>
+                    <th>Резултат</th>
+                    <th>Гост</th>
+                </tr>
+                </thead>';
+            foreach($games as $game){
+                $html.="<tr>";
+                $html.="<td>".date('Y-F-d',(int)$game->getDatePlay())."</td>";
+                $html.="<td>".$game->getHomeTeam()."</td>";
+                $html.="<td><a href=\"index.php?c=roster&m=index&id=".$game->getId()."\">".$game->getScore()."</a></td>";
+                $html.="<td>".$game->getAwayTeam()."</td>";
+                $html.="</tr>";
+            }
+            $html.="</table>";
+        }
+        echo $html;
+
+    }
 }

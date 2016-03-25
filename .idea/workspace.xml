@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1ea0c2e9-6f0e-4498-a80c-9a8acc77779a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/front/game/listing.php" afterPath="$PROJECT_DIR$/common/views/front/game/listing.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/front/home.php" afterPath="$PROJECT_DIR$/common/views/front/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/controllers/front/GamesController.php" afterPath="$PROJECT_DIR$/common/controllers/front/GamesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/front/player/listing.php" afterPath="$PROJECT_DIR$/common/views/front/player/listing.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/front/player/single.php" afterPath="$PROJECT_DIR$/common/views/front/player/single.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/front/team/info.php" afterPath="$PROJECT_DIR$/common/views/front/team/info.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/front/user/home.php" afterPath="$PROJECT_DIR$/common/views/front/user/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/front/team/listing.php" afterPath="$PROJECT_DIR$/common/views/front/team/listing.php" />
     </list>
     <ignored path="SportBlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,12 +29,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GameController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/controllers/admin/GameController.php">
+      <file leaf-file-name="GamesController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/controllers/front/GamesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-121.833336">
-              <caret line="210" column="9" selection-start-line="210" selection-start-column="9" selection-end-line="210" selection-end-column="9" />
-              <folding />
+            <state vertical-scroll-proportion="-41.833332">
+              <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
+              <folding>
+                <marker date="1458930518000" expanded="true" signature="3154:3389" placeholder="..." />
+                <marker date="1458930518000" expanded="true" signature="3154:3890" placeholder="..." />
+                <marker date="1458930518000" expanded="true" signature="3178:3389" placeholder="..." />
+                <marker date="1458930518000" expanded="true" signature="3199:3364" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,7 +47,7 @@
       <file leaf-file-name="GamesCollection.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/models/collections/GamesCollection.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.25">
+            <state vertical-scroll-proportion="-29.708334">
               <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
               <folding>
                 <marker date="1458681250000" expanded="true" signature="727:881" placeholder="SELECT g.sco... $" />
@@ -53,31 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RosterController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/controllers/admin/RosterController.php">
+      <file leaf-file-name="TeamsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/controllers/front/TeamsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.083334">
-              <caret line="217" column="1" selection-start-line="217" selection-start-column="1" selection-end-line="217" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GamesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/controllers/front/GamesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.875">
-              <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="listing.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/views/front/game/listing.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.458334">
-              <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="86" />
+            <state vertical-scroll-proportion="-27.458334">
+              <caret line="96" column="81" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -96,26 +82,43 @@
       <file leaf-file-name="info.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/views/front/team/info.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22643979">
-              <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.039267015">
+              <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
               <folding>
-                <marker date="1458683748000" expanded="true" signature="2785:2827" placeholder="..." />
-                <marker date="1458683748000" expanded="true" signature="2785:3019" placeholder="..." />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <marker date="1458931039000" expanded="true" signature="2850:2892" placeholder="..." />
+                <marker date="1458931039000" expanded="true" signature="2850:3084" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GamesPlayersCollection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/models/collections/GamesPlayersCollection.php">
+      <file leaf-file-name="listing.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/views/front/team/listing.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="26.916666">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1457991729000" expanded="true" signature="731:838" placeholder="SELECT gp.ga... $" />
-                <marker date="1457991729000" expanded="true" signature="1632:1675" placeholder="DELETE FROM " />
-                <marker date="1457991729000" expanded="true" signature="1888:1933" placeholder="DELETE FROM " />
-              </folding>
+            <state vertical-scroll-proportion="-4.3333335">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listing.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/views/front/player/listing.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/views/front/player/single.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.875">
+              <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -176,14 +179,10 @@
         <option value="$PROJECT_DIR$/common/controllers/front/UserController.php" />
         <option value="$PROJECT_DIR$/common/views/front/roster.php" />
         <option value="$PROJECT_DIR$/common/controllers/front/RosterController.php" />
-        <option value="$PROJECT_DIR$/common/controllers/front/GamesController.php" />
         <option value="$PROJECT_DIR$/common/system/Pagination2.php" />
         <option value="$PROJECT_DIR$/common/controllers/front/HomeController.php" />
         <option value="$USER_HOME$/Dropbox/ps" />
-        <option value="$PROJECT_DIR$/common/views/front/team/listing.php" />
         <option value="$PROJECT_DIR$/common/controllers/front/TeamsController.php" />
-        <option value="$PROJECT_DIR$/common/views/front/player/listing.php" />
-        <option value="$PROJECT_DIR$/common/views/front/player/single.php" />
         <option value="$PROJECT_DIR$/common/controllers/front/PlayersController.php" />
         <option value="$PROJECT_DIR$/common/views/front/include/menu.php" />
         <option value="$PROJECT_DIR$/common/views/front/team/gallery.php" />
@@ -198,6 +197,10 @@
         <option value="$PROJECT_DIR$/common/views/front/game/listing.php" />
         <option value="$PROJECT_DIR$/common/views/front/user/home.php" />
         <option value="$PROJECT_DIR$/common/views/front/home.php" />
+        <option value="$PROJECT_DIR$/common/views/front/team/listing.php" />
+        <option value="$PROJECT_DIR$/common/views/front/player/listing.php" />
+        <option value="$PROJECT_DIR$/common/views/front/player/single.php" />
+        <option value="$PROJECT_DIR$/common/controllers/front/GamesController.php" />
         <option value="$PROJECT_DIR$/common/views/front/team/info.php" />
       </list>
     </option>
@@ -212,8 +215,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="86" />
-    <option name="y" value="48" />
+    <option name="x" value="126" />
+    <option name="y" value="26" />
     <option name="width" value="1571" />
     <option name="height" value="885" />
   </component>
@@ -332,6 +335,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="team" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SportBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SportBlog3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="player" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -580,11 +609,17 @@
       <option name="project" value="LOCAL" />
       <updated>1458683208680</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <created>1458684023297</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1458684023297</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="48" width="1571" height="885" extended-state="0" />
+    <frame x="126" y="26" width="1571" height="885" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18014003" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -623,7 +658,8 @@
     <MESSAGE value="repair view" />
     <MESSAGE value="repair" />
     <MESSAGE value="BD" />
-    <option name="LAST_COMMIT_MESSAGE" value="BD" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -822,42 +858,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/views/front/team/listing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7300131">
-          <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/controllers/front/PlayersController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-22.458334">
           <caret line="89" column="57" selection-start-line="89" selection-start-column="57" selection-end-line="89" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/views/front/player/listing.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.708333">
-          <caret line="109" column="106" selection-start-line="109" selection-start-column="45" selection-end-line="109" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/views/front/player/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64790577">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/controllers/front/TeamsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4712042">
-          <caret line="82" column="9" selection-start-line="70" selection-start-column="8" selection-end-line="82" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -998,31 +1002,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/collections/GamesCollection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-21.25">
-          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-          <folding>
-            <marker date="1458681250000" expanded="true" signature="727:881" placeholder="SELECT g.sco... $" />
-            <marker date="1458681250000" expanded="true" signature="1887:2041" placeholder="SELECT g.sco... $" />
-            <marker date="1458681250000" expanded="true" signature="3083:3238" placeholder="SELECT g.sco... $" />
-            <marker date="1458681250000" expanded="true" signature="4825:4963" placeholder="SELECT g.sco... $" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/controllers/admin/RosterController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-28.083334">
           <caret line="217" column="1" selection-start-line="217" selection-start-column="1" selection-end-line="217" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/controllers/front/GamesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.875">
-          <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1059,13 +1042,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/common/views/front/team/listing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3333335">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/views/front/player/listing.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/views/front/player/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="60" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/controllers/front/TeamsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.458334">
+          <caret line="96" column="81" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/collections/GamesCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-29.708334">
+          <caret line="150" column="0" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+          <folding>
+            <marker date="1458681250000" expanded="true" signature="727:881" placeholder="SELECT g.sco... $" />
+            <marker date="1458681250000" expanded="true" signature="1887:2041" placeholder="SELECT g.sco... $" />
+            <marker date="1458681250000" expanded="true" signature="3083:3238" placeholder="SELECT g.sco... $" />
+            <marker date="1458681250000" expanded="true" signature="4825:4963" placeholder="SELECT g.sco... $" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/controllers/front/GamesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-41.833332">
+          <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
+          <folding>
+            <marker date="1458930518000" expanded="true" signature="3154:3389" placeholder="..." />
+            <marker date="1458930518000" expanded="true" signature="3154:3890" placeholder="..." />
+            <marker date="1458930518000" expanded="true" signature="3178:3389" placeholder="..." />
+            <marker date="1458930518000" expanded="true" signature="3199:3364" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/common/views/front/team/info.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22643979">
-          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.039267015">
+          <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
           <folding>
-            <marker date="1458683748000" expanded="true" signature="2785:2827" placeholder="..." />
-            <marker date="1458683748000" expanded="true" signature="2785:3019" placeholder="..." />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <marker date="1458931039000" expanded="true" signature="2850:2892" placeholder="..." />
+            <marker date="1458931039000" expanded="true" signature="2850:3084" placeholder="..." />
           </folding>
         </state>
       </provider>

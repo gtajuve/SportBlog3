@@ -9,7 +9,7 @@
                     <label class="control-label" for="selectError2"></label>
                     <div class="controls">
                         <select data-placeholder="Избери Отбор" name="team_id" id="selectError2" data-rel="chosen">
-                            <option value=""></option>
+                            <option value=""><-- Избери Отбор --></option>
                             <?php foreach($teams as $team) : ?>
                                 <?php if($team->getCountryId()!=$country) {
                                     $country=$team->getCountryId();
