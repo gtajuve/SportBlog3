@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ea0c2e9-6f0e-4498-a80c-9a8acc77779a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/controllers/front/GamesController.php" afterPath="$PROJECT_DIR$/common/controllers/front/GamesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/front/player/listing.php" afterPath="$PROJECT_DIR$/common/views/front/player/listing.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/front/player/single.php" afterPath="$PROJECT_DIR$/common/views/front/player/single.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/front/team/info.php" afterPath="$PROJECT_DIR$/common/views/front/team/info.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/views/front/team/listing.php" afterPath="$PROJECT_DIR$/common/views/front/team/listing.php" />
     </list>
     <ignored path="SportBlog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -615,11 +610,17 @@
       <option name="project" value="LOCAL" />
       <updated>1458684023297</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update 25.03">
+      <created>1458944213012</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1458944213012</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="126" y="26" width="1571" height="885" extended-state="0" />
+    <frame x="126" y="26" width="1571" height="885" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18014003" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -659,7 +660,8 @@
     <MESSAGE value="repair" />
     <MESSAGE value="BD" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update 25.03" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 25.03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

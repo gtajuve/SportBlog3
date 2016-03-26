@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 22 март 2016 в 22:45
+-- Generation Time: 26 март 2016 в 08:39
 -- Версия на сървъра: 10.1.9-MariaDB
 -- PHP Version: 5.6.15
 
@@ -66,20 +66,24 @@ CREATE TABLE `games` (
 
 INSERT INTO `games` (`id`, `home_team_id`, `away_team_id`, `score`, `date_play`) VALUES
 (2, 2, 3, '0:0', 1454797505),
+(26, 2, 16, '4:0', 1458929400),
 (25, 29, 30, '0:2', 1458681465),
 (13, 12, 15, '0:0', 1455837750),
 (5, 2, 11, '1:0', 1454942082),
+(28, 9, 2, '1:0', 1458929420),
 (10, 10, 7, '2:1', 1455113709),
 (24, 19, 17, '1:0', 1458681185),
 (9, 5, 14, '1:0', 1454945399),
 (14, 2, 11, '2:0', 1455837913),
 (15, 8, 9, '0:1', 1456041158),
 (16, 23, 24, '2:1', 1456181244),
+(27, 12, 2, '1:0', 1458929409),
 (19, 24, 25, '0:0', 1457130148),
 (20, 6, 10, '2:0', 1457130262),
 (21, 26, 30, '1:1', 1457471204),
 (22, 26, 29, '4:2', 1457471230),
-(23, 10, 22, '1:0', 1457476433);
+(23, 10, 22, '1:0', 1457476433),
+(29, 2, 5, '2:0', 1458929439);
 
 -- --------------------------------------------------------
 
@@ -156,14 +160,6 @@ INSERT INTO `games_players` (`game_id`, `player_id`, `goals_ongame`) VALUES
 (16, 156, 0),
 (16, 154, 0),
 (16, 160, 0),
-(2, 3, 0),
-(2, 5, 0),
-(2, 4, 0),
-(2, 2, 0),
-(2, 9, 0),
-(2, 8, 0),
-(2, 7, 0),
-(2, 6, 0),
 (1, 22, 0),
 (1, 25, 0),
 (1, 21, 0),
@@ -233,7 +229,17 @@ INSERT INTO `games_players` (`game_id`, `player_id`, `goals_ongame`) VALUES
 (20, 46, 0),
 (20, 72, 0),
 (20, 73, 0),
-(20, 74, 0);
+(20, 74, 0),
+(2, 5, 0),
+(2, 2, 0),
+(2, 164, 0),
+(2, 162, 0),
+(2, 9, 0),
+(2, 8, 0),
+(2, 7, 0),
+(2, 6, 0),
+(2, 1, 0),
+(2, 148, 0);
 
 -- --------------------------------------------------------
 
@@ -263,6 +269,7 @@ INSERT INTO `messages` (`id`, `user_id`, `reg_time`, `message`, `title`, `team_i
 (5, 3, 1458321305, 'По-рано през кампанията Силва пропусна 6 седмици заради подобна контузия и сега се твърди, че продължава да изпитва дискомфорт, което със сигурност е притеснително за отбора му. Засега се смята, че операция не е необходима, но самият играч се надява, че ще бъде излекуван напълно. В Сити пък стискат силно палци това да се случи,', 'По-рано през кампанията Силва пропусна 6 седмици', 2),
 (6, 3, 1458329884, 'Капитанът на Манчестър Сити Венсан Компани може да не играе два месеца и така на практика да пропусне остатъка от сезона. Това обяви селекционерът на Белгия Марк Вилмотс. \r\nЗащитникът получи нова травма в прасеца във вторник срещу Динамо Киев, след като пропусна голяма част от сезона заради подобен проблем. Първоначално бе обявено, че ще се възстановява около месец, но сега се оказва, че ситуацията може и да е по-сериозна и според Вилмотс Компани ще липсва между 6 и 8 седмици\r\n\r\nПрочети още на: http://www.gol.bg/mancity/2016-03-18/kompani-mozhe-da-e-aut-i-za-2-dva-mesetsa', 'Компани може да е аут и за 2 месеца  !!!', 2),
 (7, 6, 1458331899, 'Техническият директор на Манчестър Сити Чики Бегиристайн коментира жребия за четвъртфиналите на Шампионската лига по футбол, в който "гражданите" се паднаха да играят с Пари Сен Жермен.\r\n\r\n"Много е трудно да се каже, че има добър жребий, когато си се класирал за четвъртфиналите на Шампионската лиг"а, каза Бегиристийн.\r\n"Видяхме какво направи Пари Сен Жермен в предишния кръг срещу Челси. ПСЖ е вече шампион на Франция с много точки аванс. Те винаги са играли добре срещу английски отбори".', 'Ман Сити се стресна от ПСЖ', 2),
+(11, 28, 1458683970, 'Spätestens nach der bitteren 0:1-Pleite in Frankfurt beginnen bei Hannover 96 die Planungen für die 2. Bundesliga. Auf Nationalkeeper Ron-Robert Zieler werden die Roten dabei kaum bauen können.\r\n\r\nDer 27-Jährige zählt in der laufenden Spielzeit zu den wenigen Konstanten beim Krisenclub aus Niedersachsen. Ein ums andere Mal war der Schlussmann der einzige 96-Spieler auf dem Platz, der Bundesligaformat nachweisen konnte. Auch in der kommenden Saison?', 'Bye Bye 96? Zieler bei Bayer im Gespräch', 30),
 (9, 6, 1458333325, 'Техническият директор на Манчестър Сити Чики Бегиристайн коментира жребия за четвъртфиналите на Шампионската лига по футбол, в който "гражданите" се паднаха да играят с Пари Сен Жермен.\r\n\r\n"Много е трудно да се каже, че има добър жребий, когато си се класирал за четвъртфиналите на Шампионската лиг"а, каза Бегиристийн.\r\n"Видяхме какво направи Пари Сен Жермен в предишния кръг срещу Челси. ПСЖ е вече шампион на Франция с много точки аванс. Те винаги са играли добре срещу английски отбори".', 'Ман Сити се стресна от ПСЖ!', 2);
 
 -- --------------------------------------------------------
@@ -288,16 +295,16 @@ CREATE TABLE `players` (
 --
 
 INSERT INTO `players` (`id`, `first_name`, `last_name`, `position_player`, `country`, `games`, `goals`, `image`, `team_id`) VALUES
-(1, 'Aaron', 'Ramsey', 'M', 'Wales', 6, 7, 'http://cache.images.core.optasports.com/soccer/players/150x150/66532.png', 3),
-(2, 'Samir', 'Nasri', 'M', 'France', 6, 2, 'http://cache.images.core.optasports.com/soccer/players/150x150/1538.png', 2),
+(1, 'Aaron', 'Ramsey', 'M', 'Wales', 7, 7, 'http://cache.images.core.optasports.com/soccer/players/150x150/66532.png', 3),
+(2, 'Samir', 'Nasri', 'M', 'France', 7, 2, 'http://cache.images.core.optasports.com/soccer/players/150x150/1538.png', 2),
 (168, 'Felix', 'Wiedwald', 'G', 'Germany', 27, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/85380.png', 29),
-(5, 'Joe', 'Hart', 'G', 'England', 6, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/2842.png', 2),
-(6, 'David', 'Ospina', 'G', 'Colombia', 5, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/22426.png', 3),
-(7, 'Per', 'Mertesacker', 'D', 'Germany', 5, 3, 'http://cache.images.core.optasports.com/soccer/players/150x150/16.png', 3),
-(8, 'Santiago', 'Cazorla', 'M', 'Spain', 5, 2, 'http://cache.images.core.optasports.com/soccer/players/150x150/18102.png', 3),
-(9, 'Joel', 'Campbell', 'F', 'Costa Rica', 5, 3, 'http://cache.images.core.optasports.com/soccer/players/150x150/102896.png', 3),
-(164, 'Bacary', 'Sagna', 'D', 'France', 25, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/1407.png', 2),
-(162, 'Sergio', 'Agüero', 'F', 'Argentina', 23, 10, 'http://cache.images.core.optasports.com/soccer/players/150x150/3051.png', 2),
+(5, 'Joe', 'Hart', 'G', 'England', 7, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/2842.png', 2),
+(6, 'David', 'Ospina', 'G', 'Colombia', 6, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/22426.png', 3),
+(7, 'Per', 'Mertesacker', 'D', 'Germany', 6, 3, 'http://cache.images.core.optasports.com/soccer/players/150x150/16.png', 3),
+(8, 'Santiago', 'Cazorla', 'M', 'Spain', 6, 2, 'http://cache.images.core.optasports.com/soccer/players/150x150/18102.png', 3),
+(9, 'Joel', 'Campbell', 'F', 'Costa Rica', 6, 3, 'http://cache.images.core.optasports.com/soccer/players/150x150/102896.png', 3),
+(164, 'Bacary', 'Sagna', 'D', 'France', 26, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/1407.png', 2),
+(162, 'Sergio', 'Agüero', 'F', 'Argentina', 24, 10, 'http://cache.images.core.optasports.com/soccer/players/150x150/3051.png', 2),
 (19, 'Kasper', 'Schmeichel', 'G', 'Denmark', 3, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/2841.png', 35),
 (20, 'Robert', 'Huth', 'D', 'Germany', 2, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/11.png', 35),
 (21, 'Wes', 'Morgan', 'D', 'Jamaica', 3, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/47493.png', 35),
@@ -421,7 +428,7 @@ INSERT INTO `players` (`id`, `first_name`, `last_name`, `position_player`, `coun
 (144, 'Rudy', 'Gestede', 'F', 'Benin', 4, 5, 'http://cache.images.core.optasports.com/soccer/players/150x150/37908.png', 19),
 (146, 'Íñigo', 'Martínez', 'D', 'Spain', 25, 1, 'http://cache.images.core.optasports.com/soccer/players/150x150/146693.png', 23),
 (147, 'Gerónimo', 'Rulli', 'G', 'Argentina', 27, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/152109.png', 23),
-(148, 'Alex', 'Oxlade-Chamberlain', 'F', 'England', 0, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/120695.png', 3),
+(148, 'Alex', 'Oxlade-Chamberlain', 'F', 'England', 1, 0, 'http://cache.images.core.optasports.com/soccer/players/150x150/120695.png', 3),
 (149, 'Diego', 'Reyes', 'D', 'Mexico', 18, 1, 'http://cache.images.core.optasports.com/soccer/players/150x150/53096.png', 23),
 (150, 'Xabier', 'Prieto', 'M', 'Spain', 25, 6, 'http://cache.images.core.optasports.com/soccer/players/150x150/4503.png', 23),
 (151, 'Asier', 'Illarramendi', 'M', 'Spain', 25, 1, 'http://cache.images.core.optasports.com/soccer/players/150x150/62758.png', 23),
@@ -539,6 +546,7 @@ INSERT INTO `users` (`id`, `username`, `password`, `reg_time`, `permition`, `gen
 (1, 'admin', 'b1b3773a05c0ed0176787a4f1574ff0075f7521e', 1454361732, 1, 'male', 'dadsd@kasnkla.bg'),
 (2, 'gogo', 'b1b3773a05c0ed0176787a4f1574ff0075f7521e', 1454537273, 0, 'male', 'gogo@gogo.bg'),
 (3, 'Pancho', '695f4a70eba026832fe8904ea2c5e1a8c96384ab', 1454537419, 0, 'male', 'gtajuve@jks.bg'),
+(28, 'ppppp', 'b1b3773a05c0ed0176787a4f1574ff0075f7521e', 1458683809, 0, 'female', 'sdkfnksjf@jkaks.vom'),
 (6, 'dani', 'b1b3773a05c0ed0176787a4f1574ff0075f7521e', 1455044845, 0, 'female', 'dani@dani.com'),
 (11, 'gogoto', 'b1b3773a05c0ed0176787a4f1574ff0075f7521e', 1455175406, 0, 'female', 'asss@as.sss'),
 (27, 'momo', 'b1b3773a05c0ed0176787a4f1574ff0075f7521e', 1458245532, 0, 'male', 'kolio@majd.com');
@@ -579,7 +587,10 @@ INSERT INTO `user_teams` (`user_id`, `team_id`) VALUES
 (3, 22),
 (6, 2),
 (6, 19),
-(11, 10);
+(11, 10),
+(28, 27),
+(28, 30),
+(1, 2);
 
 --
 -- Indexes for dumped tables
@@ -640,12 +651,12 @@ ALTER TABLE `country`
 -- AUTO_INCREMENT for table `games`
 --
 ALTER TABLE `games`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 --
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `players`
 --
@@ -665,7 +676,7 @@ ALTER TABLE `teams_images`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
